@@ -2,7 +2,7 @@
 let boxes = [];
 
 // Array of emojis
-let emojis = ['😀', '💕', '🏖', '🏄‍♀️', '😆', '🍧', '🆒', '🤣', '🎶', '💬','⍵', '🍉', '🏖', '🏄‍♀️', '😆', '🍧', '🆒', '🤣', '😊', '😇'];
+let emojis = ['🤟', '💕', '🏖', '🏄‍♀️', '😆', '🍧', '🆒', '🤣', '🎶', '💬','⍵', '🍉', '🧊', '🏄‍♀️', '😆', '🛁', '🆒', '💦', '🥵', '😇'];
 
 // Gravity force
 let gravity;
@@ -28,6 +28,13 @@ function setup() {
 function draw() {
   background(255);
 image(backgroundImage, 0, 0, width, height);
+  textSize(90);
+  fill('#F6F7F7'); 
+  strokeWeight(5);
+  stroke('#545353')
+  text('Summer', 270, 150);
+  noStroke()
+  textSize(100)
   // If the mouse is pressed, apply gravity to the boxes
   if (mouseIsPressed) {
     for (let box of boxes) {
